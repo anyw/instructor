@@ -5,7 +5,7 @@
 	
 		public $data = "";
 		
-		const DB_SERVER = "172.30.255.47";
+		const DB_SERVER = "172.30.66.82";
 		const DB_USER = "instructor";
 		const DB_PASSWORD = "password";
 		const DB = "instructor";
