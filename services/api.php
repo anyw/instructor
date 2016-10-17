@@ -5,7 +5,8 @@
 	
 		public $data = "";
 		
-		//const DB_SERVER = "172.30.255.53";
+		//MYSQLDB SVC IP ADDRESS
+		const DB_SERVER = "172.30.255.53";
 		const DB_USER = "instructor";
 		const DB_PASSWORD = "password";
 		const DB = "instructor";
@@ -21,8 +22,8 @@
 		 *  Connect to Database
 		*/
 		private function dbConnect(){
-			//$this->mysqli = new mysqli(self::DB_SERVER, self::DB_USER, self::DB_PASSWORD, self::DB);
-			$this->mysqli = new mysqli($_ENV["MYSQLDB_SERVICE_HOST"], self::DB_USER, self::DB_PASSWORD, self::DB);
+			$this->mysqli = new mysqli(self::DB_SERVER, self::DB_USER, self::DB_PASSWORD, self::DB);
+			//$this->mysqli = new mysqli($_ENV["MYSQLDB_SERVICE_HOST"], self::DB_USER, self::DB_PASSWORD, self::DB);
 		}
 		
 		/*
